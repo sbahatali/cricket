@@ -1,0 +1,22 @@
+{
+  "news": [
+    {
+      "id": "1",
+      "title": "If you take sport away, then I don't know what we have",
+      "detail": "Dale Steyn talks about the impact of the Covid-19 pandemic in South Africa",
+      "imageUrl": "https://a.espncdn.com/i/cricket/cricinfo/1219565_1296x729.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Bal: Sport still matters, perhaps more than we think",
+      "detail": "In times like these, it can offer some of the respite our minds and hearts need",
+      "imageUrl": "https://a.espncdn.com/i/cricket/cricinfo/1219574_1296x729.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Archer condemns racist abuse on social media",
+      "detail": "Issue should be addressed properly says England fast bowler after posting abusive messages he had received",
+      "imageUrl": "https://a.espncdn.com/i/cricket/cricinfo/1213181_1296x729.jpg"
+    }
+  ]
+}

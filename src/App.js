@@ -1,25 +1,17 @@
 import React from 'react';
+import Login from "./components/login/login.jsx";
+import Home from "./components/home/home.jsx";
+import Register from "./components/register/register.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Home />
+    </React.Fragment>
   );
 }
 
