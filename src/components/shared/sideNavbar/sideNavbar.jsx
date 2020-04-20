@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import TeamsSidebar from '../../teamsSidebar/teamsSidebar';
+import SeriesSidebar from '../../SeriesSidebar/seriesSidebar.jsx';
 
 class SideNavbar extends Component {
     state = {}
@@ -14,12 +17,12 @@ class SideNavbar extends Component {
                   Dashboard <span className="sr-only">(current)</span>
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <span data-feather="file"></span>
-                  Orders
-                </a>
-                            </li>
+                            <Switch>
+                                <Route path="/teams" component={TeamsSidebar} />
+                                <Route path="/series" component={SeriesSidebar} />
+                            </Switch>
+
+
                         </ul>
                     </div>
                 </nav>

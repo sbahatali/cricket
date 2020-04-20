@@ -18,5 +18,126 @@
       "detail": "Issue should be addressed properly says England fast bowler after posting abusive messages he had received",
       "imageUrl": "https://a.espncdn.com/i/cricket/cricinfo/1213181_1296x729.jpg"
     }
+  ],
+  "users": [
+    {
+      "name": "Khizar ALI",
+      "username": "khizar@domain.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "SBAHAT ALI",
+      "username": "sbahat@domain.com",
+      "password": "123456",
+      "id": 5
+    }
+  ],
+  "teams": [
+    {
+      "name": "India",
+      "id": "hiYFyo3"
+    },
+    {
+      "name": "South Africa",
+      "id": "AeDUPM2"
+    },
+    {
+      "name": "England",
+      "id": "HjUExn2"
+    },
+    {
+      "name": "New Zealand",
+      "id": "UUpY6gE"
+    },
+    {
+      "name": "West Indies",
+      "id": "EoVJfX2"
+    },
+    {
+      "name": "Australia",
+      "id": "79LVbIC"
+    },
+    {
+      "name": "Bangladesh",
+      "id": "0dY-Oxf"
+    }
+  ],
+  "series": [
+    {
+      "name": "India Vs Bangladesh",
+      "id": 1
+    },
+    {
+      "name": "India Vs Pakistan",
+      "id": 2
+    },
+    {
+      "name": "SriLanka Vs Pakistan",
+      "id": 3
+    },
+    {
+      "name": "SriLanka Vs South Africa",
+      "id": 4
+    },
+    {
+      "name": "England Vs South Africa",
+      "id": 5
+    },
+    {
+      "name": "New Zeland Vs South Africa",
+      "id": 6
+    },
+    {
+      "name": "Australia Vs South Africa",
+      "id": 7
+    }
+  ],
+  "players": [
+    {
+      "name": "Zaheer Khan",
+      "dob": "08/02/1992",
+      "playingRole": "Bowler",
+      "battingStyle": "Right",
+      "bowlingStyle": "Right",
+      "team": "hiYFyo3",
+      "id": 1
+    },
+    {
+      "name": "Hashim Amla",
+      "dob": "08/02/1992",
+      "playingRole": "Batsman",
+      "battingStyle": "Right",
+      "bowlingStyle": "Right",
+      "team": "AeDUPM2",
+      "id": 2
+    },
+    {
+      "name": "Sachin Tendulkar",
+      "dob": "08/02/1992",
+      "playingRole": "Batsman",
+      "battingStyle": "Right",
+      "bowlingStyle": "Right",
+      "team": "hiYFyo3",
+      "id": 3
+    },
+    {
+      "name": "Irfan Pathan",
+      "dob": "10/25/1985",
+      "playingRole": "Bowler",
+      "battingStyle": "Right",
+      "bowlingStyle": "Right",
+      "team": "hiYFyo3",
+      "id": 4
+    },
+    {
+      "name": "azhar ud ddin",
+      "dob": "08/02/1990",
+      "playingRole": "Batsman",
+      "battingStyle": "Right",
+      "bowlingStyle": "Right",
+      "team": "hiYFyo3",
+      "id": 5
+    }
   ]
 }
