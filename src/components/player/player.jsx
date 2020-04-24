@@ -11,10 +11,6 @@ class Player extends Component {
         teams: []
     }
 
-    async componentDidMount() {
-        let { data: teams } = await teamService.getTeams();
-        this.setState({ teams })
-    }
     schema = {
         name: Joi.string().required().label('Name'),
         dob: Joi.string().required().label('Date of Birth'),
@@ -23,6 +19,21 @@ class Player extends Component {
         bowlingStyle: Joi.string().required().label('Bowling Style'),
         team: Joi.string().required().label('Team')
     }
+
+    async componentDidMount() {
+        let { data: teams } = await teamService.getTeams();
+        this.setState({ teams })
+        if (this.props.match.params.id !== undefined) {
+            this.getPlayer();
+        }
+    }
+
+    getPlayer = async () => {
+        let playerId = this.props.match.params.id;
+        let { data: player } = await playerService.getPlayer(playerId);
+        this.setState({ player })
+    }
+
     validate = () => {
         let options = { abortEarly: false };
         let { error } = Joi.validate(this.state.player, this.schema, options);
@@ -44,17 +55,22 @@ class Player extends Component {
 
     handleSubmit = async (e) => {
         e.preventDefault();
-        let errors = this.validate();
-        this.setState({ errors: errors || {} });
-        let { player } = this.state;
-        if (errors)
-            return;
-        //call the server 
-        try {
-            let { data: player } = await playerService.addPlayer(this.state.player);
+        if (this.props.match.params.id !== undefined) {
+            await playerService.updatePlayer(this.state.player);
             window.location = '/';
-        } catch (ex) {
-            console.log('exception', ex)
+        } else {
+            let errors = this.validate();
+            this.setState({ errors: errors || {} });
+            let { player } = this.state;
+            if (errors)
+                return;
+            //call the server 
+            try {
+                let { data: player } = await playerService.addPlayer(this.state.player);
+                window.location = '/';
+            } catch (ex) {
+                console.log('exception', ex)
+            }
         }
     }
 
@@ -69,10 +85,13 @@ class Player extends Component {
         this.setState({ player, errors });
     }
 
+
+
     render() {
         let { player } = this.state;
         let { errors } = this.state;
         let { teams } = this.state;
+
         return (
             <React.Fragment>
                 <div className="text-center">
@@ -108,7 +127,7 @@ class Player extends Component {
                         </select>
                         {errors.team && <div className="alert alert-danger">{errors.team}</div>}
 
-                        <button disabled={this.validate()} className="btn btn-lg btn-primary btn-block" type="submit">Add Player</button>
+                        {this.props.match.params.id ? <button className="btn btn-lg btn-primary btn-block" type="submit">Update Player</button> : <button disabled={this.validate()} className="btn btn-lg btn-primary btn-block" type="submit">Add Player</button>}
                         <p className="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
                     </form>
                 </div>

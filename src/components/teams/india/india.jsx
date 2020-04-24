@@ -19,7 +19,8 @@ class India extends Component {
     }
 
     onEdit = async (playerId) => {
-        console.log(playerId)
+        //console.log(this.props)
+        this.props.history.push('/player/' + playerId);
     }
 
     render() {

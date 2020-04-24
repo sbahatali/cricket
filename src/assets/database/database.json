@@ -61,6 +61,10 @@
     {
       "name": "Bangladesh",
       "id": "0dY-Oxf"
+    },
+    {
+      "name": "Pakistan",
+      "id": "87dYOxf"
     }
   ],
   "series": [
@@ -122,11 +126,11 @@
       "id": 3
     },
     {
-      "name": "Irfan Pathan",
+      "name": "Yusaf Pathan",
       "dob": "10/25/1985",
       "playingRole": "Bowler",
-      "battingStyle": "Right",
-      "bowlingStyle": "Right",
+      "battingStyle": "Left",
+      "bowlingStyle": "Left",
       "team": "hiYFyo3",
       "id": 4
     },
@@ -138,6 +142,42 @@
       "bowlingStyle": "Right",
       "team": "hiYFyo3",
       "id": 5
+    },
+    {
+      "name": "Jason Roy",
+      "dob": "08/02/1992",
+      "playingRole": "Batsman",
+      "battingStyle": "Right",
+      "bowlingStyle": "Right",
+      "team": "HjUExn2",
+      "id": 6
+    },
+    {
+      "name": "Chris Gayle",
+      "dob": "08/02/1992",
+      "playingRole": "Batsman",
+      "battingStyle": "Left",
+      "bowlingStyle": "Left",
+      "team": "EoVJfX2",
+      "id": 7
+    },
+    {
+      "name": "Trent Bolt",
+      "dob": "08/02/1990",
+      "playingRole": "Batsman",
+      "battingStyle": "Right",
+      "bowlingStyle": "Right",
+      "team": "UUpY6gE",
+      "id": 8
+    },
+    {
+      "name": "Imad Waseem",
+      "dob": "08/02/1991",
+      "playingRole": "Bowler",
+      "battingStyle": "Left",
+      "bowlingStyle": "Left",
+      "team": "87dYOxf",
+      "id": 9
     }
   ]
 }

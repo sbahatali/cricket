@@ -41,6 +41,7 @@ class Home extends Component {
                                     <Route path="/teams/india/:id" component={India} />
                                     <Route path="/login" component={Login} />
                                     <Route path="/register" component={Signup} />
+                                    <Route path="/player/:id" component={Player} />
                                     <Route path="/player" component={Player} />
                                     <Route path="/" exact component={News} />
                                 </Switch>

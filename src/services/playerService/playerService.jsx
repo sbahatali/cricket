@@ -26,8 +26,25 @@ export function deletePlayer(playerId) {
     })
 }
 
+export function getPlayer(playerId) {
+    return axios({
+        method: 'GET',
+        url: url + apiEndPoint + '/' + playerId,
+    })
+}
+
+export function updatePlayer(player) {
+    return axios({
+        method: 'PUT',
+        url: url + apiEndPoint + '/' + player.id,
+        data: player
+    })
+}
+
 export default {
     addPlayer,
     getAllPlayers,
-    deletePlayer
+    deletePlayer,
+    getPlayer,
+    updatePlayer
 }
