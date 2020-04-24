@@ -6,6 +6,7 @@ import SideNavbar from '../shared/sideNavbar/sideNavbar.jsx';
 import Login from '../login/login.jsx';
 import Signup from '../signup/signup.jsx';
 import Player from '../player/player.jsx';
+import India from '../teams/india/india.jsx';
 import "./home.css";
 
 
@@ -37,10 +38,11 @@ class Home extends Component {
                             </div>
                             <div>
                                 <Switch>
+                                    <Route path="/teams/india/:id" component={India} />
                                     <Route path="/login" component={Login} />
                                     <Route path="/register" component={Signup} />
                                     <Route path="/player" component={Player} />
-                                    <Route path="/" component={News} />
+                                    <Route path="/" exact component={News} />
                                 </Switch>
                             </div>
                         </main>

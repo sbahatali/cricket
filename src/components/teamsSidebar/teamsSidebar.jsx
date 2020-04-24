@@ -19,7 +19,7 @@ class TeamsSidebar extends Component {
             let teamName = '/' + (team_name.replace(/\s+/g, '-').toLowerCase());
             return (
                 <li className="nav-item" key={team.id}>
-                    <Link className="nav-link" to={teamName + '/' + team.id}>
+                    <Link className="nav-link" to={'/teams' + teamName + '/' + team.id}>
                         {team.name}
                     </Link>
                 </li>
